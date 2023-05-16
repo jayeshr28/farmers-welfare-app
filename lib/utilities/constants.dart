@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 const kTempTextStyle = TextStyle(
   fontFamily: 'Spartan MB',
@@ -39,3 +38,9 @@ const kTextFieldInputDecoration = InputDecoration(
     borderSide: BorderSide.none,
   ),
 );
+
+class Constant {
+  static const String newsApiKey = "cad893cb492d4a359486d1e9137f9049";
+  static const String baseUrl = 'https://newsapi.org/v2/';
+  static const String topHeadLine = '/top-headlines';
+}

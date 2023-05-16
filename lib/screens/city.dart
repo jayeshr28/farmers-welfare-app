@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../utilities/constants.dart';
 
 class CityScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _CityScreenState extends State<CityScreen> {
             children: [
               Align(
                 alignment: Alignment.topLeft,
-                child: FlatButton(
+                child: TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -57,7 +58,11 @@ class _CityScreenState extends State<CityScreen> {
                   ),
                 ),
               ),
-              Image.asset('images/city.jpg',),
+              Expanded(
+                child: Image.asset(
+                  'images/city.jpg',
+                ),
+              ),
             ],
           ),
         ),

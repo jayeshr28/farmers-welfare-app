@@ -17,6 +17,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
 
+
 environment:
   sdk: ">=2.16.2 <3.0.0"
 
@@ -33,11 +34,22 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
-  geolocator: ^7.0.0
-  http: ^0.13.4
+  cupertino_icons:
+  geolocator: 9.0.2
+  http:
   flutter_spinkit:
   google_fonts:
+  intl:
+  flutter_bloc:
+  page_transition:
+  image_picker:
+  image_cropper:
+  tflite_flutter:
+  logger:
+  permission_handler: any
+  flutter_translate:
+  flutter_localization:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -63,6 +75,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/
+    - images/night_weather/
+    - images/day_weather/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
